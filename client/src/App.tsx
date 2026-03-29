@@ -1,9 +1,10 @@
 import "./App.css"
+import { Home } from "./pages/Home.tsx"
 
 function App() {
     return (
         <>
-            <h1 className="text-red-900 text-xl">First setup</h1>
+            <Home />
         </>
     )
 }
