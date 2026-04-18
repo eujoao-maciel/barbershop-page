@@ -3,50 +3,44 @@ export const Hero = () => {
         <section
             id="hero"
             aria-label="Hero section"
-            className="relative min-h-screen bg-center bg-no-repeat"
+            className="relative mt-20 min-h-dvh overflow-hidden bg-[linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.78)),url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center bg-no-repeat md:mt-0"
         >
-            <div className="absolute inset-0 -z-10">
-                <img
-                    src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1600&q=80"
-                    alt="Barber cutting hair"
-                    className="h-full w-full object-cover"
-                />
-            </div>
+            <div className="relative mx-auto flex min-h-dvh max-w-7xl flex-col items-center justify-center px-4 pb-14 text-center">
+                <div className="flex max-w-3xl flex-col items-center">
+                    <div
+                        aria-hidden="true"
+                        className="mb-8 h-25 w-25 rounded-full border border-gold-primary/60 bg-gold-primary/80"
+                    />
 
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90" />
-            <div className="absolute left-1/2 top-24 h-32 w-32 -translate-x-1/2 rounded-full bg-gold-primary/70 blur-2xl" />
-
-            <div className="relative mx-auto flex min-h-screen max-w-7xl items-center justify-center px-4 pt-24 pb-12 sm:px-6 lg:px-8">
-                <div className="flex max-w-3xl flex-col items-center text-center">
-                    <h1 className="font-serif text-5xl font-bold tracking-[-0.02em] text-white-primary sm:text-6xl lg:text-7xl">
+                    <h1 className="max-w-[12ch] font-serif text-5xl font-bold tracking-[-0.02em] text-white-primary lg:text-6xl">
                         Name
                     </h1>
 
-                    <p className="mt-3 font-serif text-2xl italic text-gold-primary sm:text-3xl">
+                    <p className="mt-1 font-serif text-xl italic text-gold-primary lg:text-2xl">
                         Barber
                     </p>
 
-                    <p className="mt-6 max-w-2xl text-sm leading-7 text-white-primary/75 sm:text-base">
+                    <p className="mt-5 max-w-xl text-sm leading-6 text-white-primary/75 sm:mt-6 sm:max-w-2xl sm:text-base sm:leading-7">
                         a little description about barber
                     </p>
+                </div>
 
-                    <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-                        <a
-                            href="#booking"
-                            aria-label="Book an appointment"
-                            className="rounded-sm bg-gold-primary px-7 py-3 text-sm font-semibold tracking-[0.18em] text-black-primary transition-all duration-200 hover:bg-white-primary hover:scale-[1.02] active:scale-[0.98]"
-                        >
-                            BOOK APPOINTMENT
-                        </a>
+                <div className="mt-8 flex w-80 max-w-md flex-col gap-3 sm:mt-10 sm:w-full sm:max-w-none sm:flex-row sm:justify-center sm:gap-4">
+                    <a
+                        href="#booking"
+                        aria-label="Book an appointment"
+                        className="w-full bg-gold-primary px-6 py-4 text-center text-sm font-semibold tracking-[0.14em] text-black-primary transition-all duration-200 hover:scale-[1.02] hover:bg-white-primary active:scale-[0.98] sm:w-auto sm:tracking-[0.18em]"
+                    >
+                        BOOK APPOINTMENT
+                    </a>
 
-                        <a
-                            href="#contact"
-                            aria-label="Try the service for free"
-                            className="rounded-sm border border-gold-primary px-7 py-3 text-sm font-semibold tracking-[0.18em] text-gold-primary transition-all duration-200 hover:bg-gold-primary hover:text-black-primary hover:scale-[1.02] active:scale-[0.98]"
-                        >
-                            TRY IT FOR FREE
-                        </a>
-                    </div>
+                    <a
+                        href="#contact"
+                        aria-label="Try the service for free"
+                        className="w-full border border-gold-primary px-6 py-3 text-center text-xs font-semibold tracking-[0.14em] text-gold-primary transition-all duration-200 hover:scale-[1.02] hover:bg-gold-primary hover:text-black-primary active:scale-[0.98] sm:w-auto sm:px-7 sm:text-sm sm:tracking-[0.18em]"
+                    >
+                        TRY IT FOR FREE
+                    </a>
                 </div>
             </div>
         </section>
