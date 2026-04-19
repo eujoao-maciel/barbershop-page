@@ -14,7 +14,7 @@ export const Navbar = () => {
 
     return (
         <>
-            <header className="fixed md:static mb-20 md:mb-0 top-0 left-0 z-50 w-full border-b border-gold-primary bg-black-primary">
+            <header className="fixed lg:static mb-20 md:mb-0 top-0 left-0 z-50 w-full border-b border-gold-primary bg-black-primary">
                 <div className="mx-auto flex w-full max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="flex w-full items-center justify-between py-5">
                         <div className="flex flex-shrink-0 items-center gap-3">
