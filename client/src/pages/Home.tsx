@@ -7,8 +7,8 @@ export const Home = () => {
       <Navbar />
       <Hero />
       <Services />
-      <About />
       <Gallery />
+      <About />
       <Booking />
       <Contact />
     </>
