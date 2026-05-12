@@ -2,8 +2,8 @@ import { Title } from "../components/ui/Title.tsx"
 import ownerbarber from "../assets/ownerbarber.jpg"
 
 const highlights = [
-    { label: "Experience", value: "10+" },
-    { label: "Clients", value: "500+" },
+    { label: "Experience", value: "+10 years" },
+    { label: "Clients", value: "+1000" },
     { label: "Style", value: "Premium" },
 ]
 
