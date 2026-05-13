@@ -36,7 +36,41 @@ export const Contact = () => {
         <Title title="Contact Info" />
 
         <div className="grid w-full max-w-[920px] gap-[24px] lg:grid-cols-[280px_minmax(0,1fr)]">
-          <div className="aspect-square w-full border border-gold-primary bg-black-primary p-[20px] sm:p-[24px] lg:h-[360px] lg:p-[20px]"></div>
+          <div className="flex min-h-[320px] flex-col justify-between border border-gold-primary bg-black-primary px-[20px] py-[24px] sm:px-[24px] sm:py-[28px] lg:h-[360px] lg:px-[24px] lg:py-[30px]">
+            <div className="space-y-[8px] border-b border-gold-primary/20 pb-[18px]">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-primary">
+                Contact
+              </p>
+              <h3 className="font-serif text-[28px] leading-[1] text-white-primary sm:text-[32px]">
+                Visit us
+              </h3>
+            </div>
+
+            <div className="grid gap-[16px] py-[18px]">
+              {contactItems.map(({ icon: Icon, title, subtitle }) => (
+                <div
+                  key={title}
+                  className="flex items-start gap-[12px] sm:gap-[14px]"
+                >
+                  <Icon className="mt-[2px] size-[16px] shrink-0 text-gold-primary sm:size-[18px]" />
+
+                  <div className="text-left">
+                    <p className="text-[14px] font-medium leading-[1.35] text-white-primary sm:text-[15px]">
+                      {title}
+                    </p>
+                    <p className="text-[13px] leading-[1.5] text-white-primary/60 sm:text-[14px]">
+                      {subtitle}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <p className="border-t border-gold-primary/20 pt-[16px] text-[12px] leading-[1.6] text-white-primary/55 sm:text-[13px]">
+              Classic service, modern precision, and a space made for your
+              routine.
+            </p>
+          </div>
 
           <div className="aspect-square w-full overflow-hidden border border-gold-primary bg-black-primary lg:h-[360px]">
             <AddressMap />
