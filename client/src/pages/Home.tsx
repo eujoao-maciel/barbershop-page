@@ -1,4 +1,5 @@
 import { Navbar } from "../components/layout/Navbar";
+import { Footer } from "../components/layout/Footer";
 import { About, Booking, Contact, Gallery, Hero, Services } from "../sections";
 
 export const Home = () => {
@@ -11,6 +12,7 @@ export const Home = () => {
       <About />
       <Booking />
       <Contact />
+      <Footer />
     </>
   );
 };
