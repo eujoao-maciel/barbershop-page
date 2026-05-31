@@ -25,7 +25,7 @@ export const Services = () => {
     },
     {
       icon: BrushCleaning,
-      title: "Beard Trim",
+      title: "Beard Service",
       description: "Precise beard shaping with a polished finish.",
       price: "$12",
     },

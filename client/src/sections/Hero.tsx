@@ -17,8 +17,8 @@ export const Hero = () => {
                         <h1 className="font-serif font-semibold text-white-primary text-6xl md:text-7xl">
                             Name
                         </h1>
-                        <h3 className="font-serif font-medium text-gold-primary text-2xl sm:text-4xl">
-                            Barber
+                        <h3 className="font-serif font-medium text-gold-primary text-2xl sm:text-3xl">
+                            BarberShop
                         </h3>
                     </div>
 

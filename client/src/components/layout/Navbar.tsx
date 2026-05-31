@@ -25,10 +25,10 @@ export const Navbar = () => {
 
                             <div className="flex flex-col leading-none">
                                 <span className="font-serif text-lg font-semibold text-white-primary">
-                                    Barber Name
+                                    Barbershop Name
                                 </span>
                                 <span className="mt-1 text-[0.65rem] font-semibold uppercase tracking-[0.35em] text-gold-primary">
-                                    Barber
+                                    BarberShop
                                 </span>
                             </div>
                         </div>
