@@ -26,12 +26,18 @@ export const Hero = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row items-center gap-3">
-                    <button className="bg-gold-primary border px-6 py-4 font-sans text-sm font-semibold uppercase text-black-primary transition-colors duration-200 hover:bg-white-primary">
-                        Book appointment
-                    </button>
-                    <button className="border border-gold-primary bg-black-primary px-6 py-4 font-sans text-sm font-semibold uppercase text-gold-primary transition-colors duration-200 hover:bg-gold-primary hover:text-black-primary">
-                        Send a message
-                    </button>
+                    <a
+                        href="#booking"
+                        className="bg-gold-primary border px-6 py-4 font-sans text-sm font-semibold uppercase text-black-primary transition-colors duration-200 hover:bg-white-primary"
+                    >
+                        Book your cut
+                    </a>
+                    <a
+                        href="#about"
+                        className="border border-gold-primary bg-black-primary px-6 py-4 font-sans text-sm font-semibold uppercase text-gold-primary transition-colors duration-200 hover:bg-gold-primary hover:text-black-primary"
+                    >
+                      Who we are
+                    </a>
                 </div>
             </main>
         </section>
