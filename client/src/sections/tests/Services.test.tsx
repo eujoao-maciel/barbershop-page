@@ -26,7 +26,7 @@ describe("Services", () => {
     expect(screen.getByText("$10")).toBeInTheDocument();
 
     expect(
-      screen.getByRole("button", { name: /beard trim/i }),
+      screen.getByRole("button", { name: /beard service/i }),
     ).toBeInTheDocument();
     expect(
       screen.getByText("Precise beard shaping with a polished finish."),
@@ -81,7 +81,7 @@ describe("Services", () => {
     render(<Services />);
 
     const haircutCard = screen.getByRole("button", { name: /haircut/i });
-    const beardTrimCard = screen.getByRole("button", { name: /beard trim/i });
+    const beardTrimCard = screen.getByRole("button", { name: /beard service/i });
 
     await user.click(haircutCard);
     expect(haircutCard).toHaveAttribute("aria-pressed", "true");

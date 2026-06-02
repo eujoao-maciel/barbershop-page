@@ -6,8 +6,10 @@ describe("Footer", () => {
     render(<Footer />);
 
     expect(screen.getByRole("contentinfo")).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Name" })).toBeInTheDocument();
-    expect(screen.getByText("Barber")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "BarberShop Name" }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("BarberShop")).toBeInTheDocument();
   });
 
   it("renders the footer navigation links", () => {

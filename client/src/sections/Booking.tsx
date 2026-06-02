@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, type FormEvent } from "react"
 import { Title } from "../components/ui/Title.tsx"
 import { createBookingMessage } from "../features/booking.utils.ts"
 
@@ -8,7 +8,7 @@ export const Booking = () => {
     const [service, setService] = useState("")
     const [date, setDate] = useState("")
 
-    const handleBooking = (e: React.FormEvent) => {
+    const handleBooking = (e: FormEvent) => {
         e.preventDefault()
 
         if (!name || !phone || !service || !date) {
@@ -40,6 +40,7 @@ export const Booking = () => {
                     >
                         <input
                             type="text"
+                            aria-label="Full Name"
                             placeholder="Full Name"
                             className="h-[48px] border border-gold-primary bg-surface-dark px-[16px] text-sm text-white-primary outline-none placeholder:text-white-primary/55"
                             value={name}
@@ -50,6 +51,7 @@ export const Booking = () => {
 
                         <input
                             type="tel"
+                            aria-label="Phone Number"
                             placeholder="Phone Number"
                             className="h-[48px] border border-gold-primary bg-surface-dark px-[16px] text-sm text-white-primary outline-none placeholder:text-white-primary/55"
                             value={phone}
@@ -59,6 +61,7 @@ export const Booking = () => {
                         />
 
                         <select
+                            aria-label="Select Service"
                             className="h-[48px] border border-gold-primary bg-surface-dark px-[16px] text-sm text-white-primary outline-none"
                             value={service}
                             onChange={(e) => {
@@ -66,14 +69,15 @@ export const Booking = () => {
                             }}
                         >
                             <option value="">Select Service</option>
-                            <option value="haircut">Haircut</option>
-                            <option value="visagism">Visagism</option>
-                            <option value="beard">Beard Trim</option>
-                            <option value="wash">Hair Wash</option>
+                            <option value="Haircut">Haircut</option>
+                            <option value="Visagism">Visagism</option>
+                            <option value="Beard Trim">Beard Trim</option>
+                            <option value="Hair Wash">Hair Wash</option>
                         </select>
 
                         <input
                             type="date"
+                            aria-label="Appointment Date"
                             className="h-[48px] border border-gold-primary bg-surface-dark px-[16px] text-sm text-white-primary outline-none placeholder:text-white-primary/55"
                             value={date}
                             onChange={(e) => {

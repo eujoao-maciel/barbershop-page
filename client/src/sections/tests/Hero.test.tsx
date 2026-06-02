@@ -9,7 +9,7 @@ describe("Hero", () => {
       screen.getByRole("heading", { level: 1, name: "Name" }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { level: 3, name: "Barber" }),
+      screen.getByRole("heading", { level: 3, name: "BarberShop" }),
     ).toBeInTheDocument();
     expect(
       screen.getByText("A litle description about barbershop"),
@@ -26,10 +26,10 @@ describe("Hero", () => {
     render(<Hero />);
 
     expect(
-      screen.getByRole("button", { name: "Book appointment" }),
-    ).toBeInTheDocument();
+      screen.getByRole("link", { name: "Book your cut" }),
+    ).toHaveAttribute("href", "#booking");
     expect(
-      screen.getByRole("button", { name: "Send a message" }),
-    ).toBeInTheDocument();
+      screen.getByRole("link", { name: "Who we are" }),
+    ).toHaveAttribute("href", "#about");
   });
 });
